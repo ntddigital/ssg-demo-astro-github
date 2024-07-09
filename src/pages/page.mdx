@@ -1,12 +1,20 @@
 ---
 layout: "@/layouts/Article.astro"
-title: "Adding Pages"
+title: "Adding Embed Components"
 description: "Adding and managing multilingual pages"
 ---
 import PageHeadline from "@/components/PageHeadline.astro";
 import { SITE_TITLE } from "@/consts";
+import { Tweet, Vimeo, YouTube } from 'astro-embed';
 
 <PageHeadline title={frontmatter.title} />
+
+## Youtube
+<YouTube id="https://youtu.be/xtTy5nKay_Y" />
+## Vimeo:
+<Vimeo id="https://vimeo.com/32001208" />
+## X:
+<Tweet id="https://twitter.com/astrodotbuild/status/1512144306898976768" />
 
 There are several ways to create multilingual pages with { SITE_TITLE }.
 
