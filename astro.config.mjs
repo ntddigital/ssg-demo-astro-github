@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-i18n-starter.pages.dev',
+  site: 'https://apage.ntddigital.net',
   integrations: [mdx(), sitemap()],
   i18n: {
     defaultLocale: 'en',
